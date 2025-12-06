@@ -1,0 +1,15 @@
+import express from 'express'
+import { Create_student, DeleteStudent, filterByDepartment, GetAllStudents, singleStudent, upDateStudent } from '../controller/studentController.js'
+const router=express.Router()
+
+router.post('/create',Create_student)
+
+router.get('/getAll',GetAllStudents)
+
+router.get('/single/:id',singleStudent)
+
+router.put('/update/:id',upDateStudent)
+router.delete('/update/:id',DeleteStudent)
+router.get('/department/:department',filterByDepartment)
+
+export default router

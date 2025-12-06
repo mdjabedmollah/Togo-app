@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-export const studenSchema=new mongoose.Schema({
+ const studenSchema=new mongoose.Schema({
     name:{
         type:String,
         required:true
@@ -13,7 +13,7 @@ export const studenSchema=new mongoose.Schema({
         required:true
     },
     cgpa :{
-        type:String,
+        type:Number,
         required:true
     },
 },{timestamps:true})
