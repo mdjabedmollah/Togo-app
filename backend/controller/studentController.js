@@ -156,4 +156,25 @@ export const filterByDepartment = async (req, res) => {
     });
   }
 };
+export  const sortCGPA =async(req,res)=>{
+  try {
+    const student = await StudentInfo.find().sort({cgpa:-1})
+    if(!student){
+       return res.status(404).json({
+        success: false,
+        message: "Student not found",
+      });
+    }
+
+    return res.status(200).json({
+      success:true,
+      student
+    })
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: "Server error",
+    });
+  }
+}
 
