@@ -1,3 +1,1 @@
 # Togo-app
-PORT=3000
-MONGO_URL
