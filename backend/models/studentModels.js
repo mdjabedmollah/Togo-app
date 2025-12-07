@@ -5,7 +5,7 @@ import mongoose from "mongoose";
         required:true
     },
       age:{
-        type:String,
+        type:Number,
         required:true
     },
      department :{

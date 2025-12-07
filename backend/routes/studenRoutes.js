@@ -9,7 +9,7 @@ router.get('/getAll',GetAllStudents)
 router.get('/single/:id',singleStudent)
 
 router.put('/update/:id',upDateStudent)
-router.delete('/update/:id',DeleteStudent)
+router.delete('/delete/:id',DeleteStudent)
 router.get('/department/:department',filterByDepartment)
 router.get('/sort',sortCGPA)
 
